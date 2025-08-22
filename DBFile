@@ -8,3 +8,7 @@ Scaffold-DbContext "Server=LAPTOP-BT9E22270FJ\SQLEXPRESS;Database=Test;MultipleA
 },
 
 builder.Services.AddDbContext<TestContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+ "ConnectionStrings": {
+    "DefaultConnection": "Server=server;Database=database;User Id=sa;Password=pass;TrustServerCertificate=true;MultipleActiveResultSets=True;"
+  }
